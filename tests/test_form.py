@@ -1,9 +1,15 @@
-import re
+import os
+#from playwright.sync_api import sync_playwright, expect
+#import re
 from playwright.sync_api import Playwright, sync_playwright, expect
 
 
 def run(playwright: Playwright) -> None:
-    browser = playwright.chromium.launch(headless=True)
+   # Detecta si estamos en GitHub Actions (la variable CI siempre es "true" en los runners)
+    is_ci = os.getenv("CI") == "true"
+
+    # Si es en la nube corre en headless (True), en tu PC se abre visible (False)
+    browser = playwright.chromium.launch(headless=is_ci)
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://demoqa.com/automation-practice-form")
