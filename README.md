@@ -10,8 +10,11 @@ Proyecto de automatización de pruebas end-to-end desarrollado con Python y Play
 ## Cómo ejecutar las pruebas
 1. Clona el repositorio:
 bash git clone https://github.com/Lucia2311/automatizacion-web-playwright.git
+
 2. Instala las dependencias:
-bash pip install -r requirements.txtplaywright install3.
+bash pip install -r requirements.txtplaywright
+
 3.Ejecuta los tests:
 bash python tests/test_form.py
+
 
