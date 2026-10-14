@@ -12,7 +12,7 @@ Proyecto de automatización de pruebas end-to-end desarrollado con Python y Play
 bash git clone https://github.com/Lucia2311/automatizacion-web-playwright.git
 
 2. Instala las dependencias:
-bash pip install -r requirements.txtplaywright
+bash pip install -r requirements.txt playwright
 
 3.Ejecuta los tests:
 bash python tests/test_form.py
