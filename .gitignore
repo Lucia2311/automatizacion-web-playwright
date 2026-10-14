@@ -1,0 +1,6 @@
+# Ignorar carpetas de entorno virtual y navegadores
+venv/
+__pycache__/
+.pytest_cache/
+playwright-report/
+test-results/
